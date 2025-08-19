@@ -18,10 +18,11 @@ void main() {
 
   var fixedValue = 20;
   print(fixedValue);
+  // fixedValue = 'Trying to assign a String';
   /*
-fixedValue = 'Trying to assign a String'; //A value of type 'String' can't be assigned to a variable of type 'int'.
-Try changing the type of the variable, or casting the right-hand type to 'int'.
-*/
+          A value of type 'String' can't be assigned to a variable of type 'int'.
+          Try changing the type of the variable, or casting the right-hand type to 'int'.
+  */
 
   // b)
   var greeting = 'Hi';
