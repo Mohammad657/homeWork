@@ -17,7 +17,6 @@ void main() {
     if (guess < 1 || guess > 20) {
       print('Please enter a valid number between 1 and 20.');
       attempt--;
-      continue;
     }
 
     if (guess == secretNumber) {
