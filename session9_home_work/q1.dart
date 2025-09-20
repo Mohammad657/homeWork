@@ -1,27 +1,24 @@
 /*
-Q1. Sum, Average & Compare 
-- Ask the user for three numbers. 
-- Print their sum and average.Then, check if the average is greater than 50 or not.
+ Q1/ Create a class City with attributes name and population. In main(), 
+ create two city objects and print their details.
 */
-import 'dart:io';
 
 void main() {
-  double sum = 0;
+  City city1 = City(name: 'New York', population: 8419000);
+  City city2 = City(name: 'Tokyo', population: 13960000);
 
-  for (int i = 1; i <= 3; i++) {
-    stdout.write("Enter number $i: ");
-    double num = double.parse(stdin.readLineSync()!);
-    sum += num;
-  }
+  city1.printDetails();
+  city2.printDetails();
+}
 
-  double average = sum / 3;
 
-  print("Sum = $sum");
-  print("Average = $average");
+class City {
+  String name;
+  int population;
 
-  if (average > 50) {
-    print("The average is greater than 50.");
-  } else {
-    print("The average is not greater than 50.");
+  City({required this.name, required this.population});
+
+  void printDetails() {
+    print('City: $name, Population: $population');
   }
 }
