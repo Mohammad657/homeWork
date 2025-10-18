@@ -7,18 +7,19 @@ class CustomBox extends StatelessWidget {
   final int flexNumber;
   const CustomBox({
     super.key,
-     this.width ,
-     this.height ,
-    required this.color,  this.flexNumber = 0,
+    this.width,
+    this.height,
+    required this.color,
+    this.flexNumber = 0,
   });
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      flex:flexNumber ,
+      flex: flexNumber,
       child: Container(
         width: width ?? double.infinity,
-        height: height ??  double.infinity,
+        height: height ?? double.infinity,
         color: color,
       ),
     );
